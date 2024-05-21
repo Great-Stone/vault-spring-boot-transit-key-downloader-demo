@@ -83,11 +83,6 @@ terraform apply -auto-approve
 
 - secret-id의 경우 `resource`로 정의되어 한번 생성되면 ttl 만료 후 사용이 불가능하므로 `application.properties`에 기록되는 `secret-id`를 교체 하거나 Terraform Destroy 후 다시 Apply 수행하여 재사용할 수 있습니다.
 
-### Step 3: Run the Java Application
-
-- Compile the Java application using Gradle:
-
-
 #### Test - Consumer Token Role
 
 1. Token Role
@@ -137,7 +132,7 @@ gradle bootRun
 
 default Url : <http://localhost:8080>
 
-![image-20240520230353397](https://raw.githubusercontent.com/Great-Stone/images/master/picgo/image-20240520230353397.png)
+![image-20240521102923465](https://raw.githubusercontent.com/Great-Stone/images/master/picgo/image-20240521102923465.png)
 
 #### Spring Boot App Policy
 
